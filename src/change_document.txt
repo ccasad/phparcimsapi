@@ -1,0 +1,85 @@
+Change Document
+===============
+
+Date			File				Modification
+------------------------------------------------------------------------
+										
+09-Aug-2002		/phparcimsapi/src/lib/phparcimsapi/api/connector.php
+									*	In the StartElement function added lines in the ENVELOPE case FEATURES case
+										[unset($this->__apiMap->__apiTempImageEnvelope);]
+					   					[$this->__apiMap->__apiTempImageEnvelope = $__apiEnvelope;]
+					   
+19-Aug-2002		/phparcimsapi/src/lib/phparcimsapi/api/functions.php
+									*   Removed the ArrayCompare function and added the function BuildingSortCompare
+										to take care of sorting a single dimensional array as well as multidimensional array.
+										Also added a new function called UniqueBldgs that takes the multidimensional array
+										and removes duplicate buildings.
+
+20-Aug-2002		/phparcimsapi/src/lib/phparcimsapi/symbol/rastermarkersymbol.php
+									*   Fixed the SetSize function to allow an array to come in
+
+20-Aug-2002		/phparcimsapi/src/lib/phparcimsapi/symbol/simplelinesymbol.php
+									*   New file
+
+20-Aug-2002		/phparcimsapi/src/phparcimsapi.php
+									*   Added the reference to the new SimpleLineSymbol object file
+
+23-Aug-2002		/phparcimsapi/src/lib/phparcimsapi/map/map.php
+									*   Added new property called __apiOverviewMap
+									*   Added new method called IsAtFullExtents
+
+22-Oct-2002		/phparcimsapi/src/lib/phparcimsapi/api/get_extract.php
+									*   New file
+									
+22-Oct-2002		/phparcimsapi/src/phparcimsapi.php
+									*   Added get_extract to the Library array
+
+22-Oct-2002		/phparcimsapi/src/lib/phparcimsapi/map/map.php
+									*   Added new property called __apiExtractZipURL
+									
+22-Oct-2002		/phparcimsapi/src/lib/phparcimsapi/api/connector.php
+									*	Added support for extract capability	
+									
+24-Oct-2002		/phparcimsapi/src/lib/phparcimsapi/api/connector.php
+									*	Added support for multiple feature envelopes
+									
+24-Oct-2002		/phparcimsapi/src/phparcimsapi.php
+									*   Added simplemarkersymbol to the Library array							
+									
+24-Oct-2002		/phparcimsapi/src/lib/phparcimsapi/symbol/simplemarkersymbol.php
+									*   New file
+									
+29-Oct-2002		/phparcimsapi/src/lib/phparcimsapi/map/buffer.php
+									*   New file
+									
+29-Oct-2002		/phparcimsapi/src/lib/phparcimsapi/map/targetlayer.php
+									*   New file
+									
+29-Oct-2002		/phparcimsapi/src/phparcimsapi.php
+									*   Added buffer and targetlayer to the Library array	
+								
+05-Nov-2002		/phparcimsapi/src/lib/phparcimsapi/map/layerdef.php
+									*   Added extra property parameters to the constructor
+										
+07-Nov-2002		/phparcimsapi/src/lib/phparcimsapi/map/spatialfilter.php
+									*   Added Buffer object because it was missing
+				
+21-Nov-2002		/phparcimsapi/src/lib/phparcimsapi/api/stateobject.php
+									*   New file									
+									
+21-Nov-2002		/phparcimsapi/src/phparcimsapi.php
+									*   Added stateobject to the Library array
+																		
+06-Jan-2003		/phparcimsapi/src/lib/phparcimsapi/api/connector.php
+									*	In the ParseXML function added following line because the parse was choking on the ampersands
+										$__apiXMLTextParam = str_replace("&", "and", $__apiXMLTextParam);
+										
+20-Mar-2003 	/phparcimsapi/src/lib/phparcimsapi/map/map.php
+									*   Added the method GetMapScale ... still not working correctly though
+		
+09-Apr-2002		/phparcimsapi/src/lib/phparcimsapi/custom/pdfmap.php
+									*   New file									
+									
+09-Apr-2002		/phparcimsapi/src/phparcimsapi.php
+									*   Added pdfmap to the Library array
+																

@@ -1,0 +1,7 @@
+PHP ArcIMS API
+
+To Do/Wishlist
+==============
+*  Documentation
+*  Add another abstraction layer which would make the API a little closer to the ActiveX or JSP connector.  Right now the API just helps the developer build the ArcXML ... ideally the API would build the ArcXML in the background while the developer builds objects in the foreground.  Would need to probably build this abstraction layer much like the object model of the ActiveX or JSP.
+*  More examples
